@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link href = "style.css" rel = "stylesheet" media="screen and (min-device-width: 500px)">
+        <meta charset= "utf-8" name ="viewport" content ="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "head">
+                <div class= "calendar">
+                    <input type = "month" name = "month" id = "time" onchange = "changeMonth(this.value)">
+                </div>
+                <div class="budget">
+                    <input type = "text" id = "myInput1"  placeholder = "Бюджет" onchange="changeBudget(this.value)"> 
+                    <span> Руб</span>
+                </div>
+            </div>
+        <div class = shop>
+            <div class="zatrat">
+                <div class = "purchase">
+                    <input id = "good" placeholder = "Введите покупку"></input>
+                </div>
+                <div class="numbers">
+                    <input id = "num" placeholder = "Введите сумму"> </input> 
+                </div>
+            </div>    
+            <div class="buttons">
+                <button id = "but">Добавить в список</button> 
+                <button id = 'clear'> Очистить </button>
+            </div>
+        </div>
+            <div id = "spisok" class="spisok"> </div>
+            <div id = "total">
+                Итого осталось: 0 руб
+            </div>
+
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>
